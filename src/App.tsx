@@ -125,7 +125,7 @@ const App: React.FC = () => {
                   <button onClick={() => {setEditingId(null); setFormData({amount: '', date: todayDate, category: ''})}} className="bg-stone-100 text-stone-500 px-5 rounded-2xl hover:bg-stone-200 transition-all"><X size={20}/></button>
                 </div>
               ) : (
-                <button onClick={handleAddExpense} className="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-2xl font-bold shadow-lg flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
+                <button onClick={handleAddExpense} className="cursor-pointer w-full bg-blue-600 hover:bg-blue-700 text-white py-4 rounded-2xl font-bold shadow-lg flex items-center justify-center gap-2 transition-all active:scale-[0.98]">
                   <Plus size={20}/> Add Entry
                 </button>
               )}
